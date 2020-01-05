@@ -1,0 +1,93 @@
+
+
+ion-title{
+    font-family: 'Raleway', sans-serif;
+}
+ion-content{
+    --background: #fff url('https://balione.s3.amazonaws.com/login.jpg') no-repeat center center / cover;
+
+    & main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+ion-card-content{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-card{
+    --background: rgba(34, 46, 40, 0.733);
+    justify-content: left;
+    align-content: center;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 70%;
+
+    & ion-card-header{
+        --background: rgba(255, 255, 255, 0);
+        align-self: center;
+    }
+
+    & ion-input{
+        border-bottom: 1px solid rgba(211, 211, 211, 0.76);
+        margin-bottom: 0.5em;
+    }
+}
+
+#myVideo {
+    z-index: 0;
+    position: fixed;
+    right: -100%;
+    bottom: -30%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .splash{
+    font-family: 'Questrial', sans-serif !important;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 15px;
+    margin-right: 15%;
+    margin-left: 15%;
+    z-index: 1;
+    font-size: 80px;
+    margin-top: 2em;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif; 
+}
+h5{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 0px;
+    color: white;
+    font-family: 'Questrial', sans-serif !important;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+
+.hasError{
+    color: red;
+    border-bottom:red;
+}
+.hasNoError{
+    color: lightgray;
+    border-bottom: rgba(211, 211, 211, 0.76);
+}
