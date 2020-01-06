@@ -1,11 +1,14 @@
 <ion-header color="dark">
   <ion-toolbar color="dark">
-    <ion-title>Welcome, {{username}}</ion-title>
+    <div class="toolbar-row">
+      <ion-title>Dashboard</ion-title>
+    </div>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="dark">
-
+<app-user-profile></app-user-profile>
 <ion-card>
   <ion-label>Transportation</ion-label>
   <ion-button>Book A driver
@@ -46,6 +49,11 @@
   <ion-label>Health Guide</ion-label>
   <ion-button>Health
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/health.png" alt="" srcset="">
+  </ion-button>
+</ion-card>
+<ion-card>
+  <ion-button color="danger" (click)="auth.signOut()">
+    Logout
   </ion-button>
 </ion-card>
 

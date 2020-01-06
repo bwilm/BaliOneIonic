@@ -14,3 +14,13 @@ ion-label{
     padding-left: 10px;
     align-self: center;
 }
+
+.toolbar-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ion-button{
+        align-self: flex-end;
+    }
+}

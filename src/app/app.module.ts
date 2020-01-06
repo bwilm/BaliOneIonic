@@ -8,15 +8,43 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
 
+//  Angular Firebase Imports
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from './../environments/environment';
+import { AuthGuard } from './core/auth.guard';
+
+
+const firebaseConfig = {
+  apiKey: environment.fsAPIkey,
+  authDomain: 'balione.firebaseapp.com',
+  databaseURL: 'https://balione.firebaseio.com',
+  projectId: 'balione',
+  storageBucket: 'balione.appspot.com',
+  messagingSenderId: '290589348099',
+  appId: '1:290589348099:web:f8c68e8572ae50a6229936'
+};
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AgmCoreModule.forRoot({
-    apiKey: 'AIzaSyCWubreTyG-uwbNZw0mNR_3LaO4uTMkEwM'
-  })],
+    apiKey: environment.agmAPIkey
+  }),
+  AngularFireModule.initializeApp(firebaseConfig),
+  AngularFireModule,
+  AngularFireAuthModule,
+  AngularFireStorageModule,
+  AngularFirestoreModule,
+  AngularFireDatabaseModule],
   providers: [
     StatusBar,
     SplashScreen,
+    [AuthGuard],
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

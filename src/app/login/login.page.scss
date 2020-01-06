@@ -91,3 +91,15 @@ h5{
     color: lightgray;
     border-bottom: rgba(211, 211, 211, 0.76);
 }
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .loginImg{
+
+        width: 40px;
+        cursor: pointer;
+    }
+
+}

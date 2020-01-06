@@ -1,8 +1,3 @@
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>BaliOne</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <h1 class="splash">BALI1</h1>
 <h5 style="z-index: 1;">EST.2019</h5>
@@ -16,14 +11,12 @@
 <ion-card>
   <ion-card-content >
   <div [ngClass]="showing ? 'show': 'hide'">
-  <ion-label color="light" [ngClass]="this.hasError ? 'hasError' : 'hasNoError'">UserName</ion-label>
-  <ion-input [(ngModel)]='this.username' color="light" [ngClass]="this.hasError ? 'hasError' : 'hasNoError'"></ion-input>
-  <ion-label color="light" [ngClass]="this.hasError ? 'hasError' : 'hasNoError'">Password</ion-label>
-  <ion-input [(ngModel)]="this.userpassword"  color="light" type="password" [ngClass]="this.hasError ? 'hasError' : 'hasNoError'"></ion-input>
+    <div class="login-box">
+    <ion-button (click)="auth.googleLogin()"> Login With Google<ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button (click)="login()"> Login With Facebook<ion-icon name="logo-facebook"></ion-icon></ion-button>
+    </div>
   </div>
-  <ion-button [ngClass]="showing ? 'hide':'show'" color="primary">New User</ion-button>
-  <ion-button [ngClass]="showing ? 'hide':'show'"  (click)="showing = !showing" color="dark">Login</ion-button>
-  <ion-button [ngClass]="showing ? 'show':'hide'" (click)="login()" color="success">Login</ion-button>
+  <ion-button [ngClass]="showing ? 'hide':'show'"  (click)="showing = !showing" color="primary">Login</ion-button>
   </ion-card-content>
 </ion-card>
 </ion-content>

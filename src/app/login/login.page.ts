@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { promise } from 'protractor';
 import { RouterLink, Router } from '@angular/router';
-import { AlertController } from '@ionic/angular'
+import { AlertController } from '@ionic/angular';
+import { AuthService } from '../core/auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -12,36 +13,19 @@ import { AlertController } from '@ionic/angular'
 
 export class LoginPage implements OnInit {
 
-  
-username: string = ''
-userpassword: string = ''
-isloading: boolean = true;
-showing: boolean = false;
-hasError: boolean = false;
+
+isloading = true;
+showing = false;
+hasError = false;
 
 
 
-  constructor(private router :Router, private alertController: AlertController) {
+  constructor(private router: Router, private alertController: AlertController, private auth: AuthService) {
    }
 
   ngOnInit() {
   }
 
-
-  login =()=>{
-    this.isloading = true;
-    const username = this.username;
-    const password = this.userpassword;
-
-    if(password && username){
-      this.router.navigate(['home'])
-    }else{
-      this.hasError = true;
-      this.alertController.create({header:'Error',message:'Incorrect Username or Password', buttons:['OK']})
-      .then(alertEl => alertEl.present());
-    }
-
-}
 }
 
 

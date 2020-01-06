@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from '../login.service';
+import { AuthService } from '../core/auth.service';
 
 
 @Component({
@@ -9,23 +11,12 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomePage implements OnInit {
 
- username:string = '';
+ username = '';
 
 
-  constructor() { }
+  constructor(private userService: LoginService, private auth: AuthService) { }
 
   ngOnInit() {
-    this.getUserName()
   }
-
-getUserName= () =>{
-
-  this.username = 'Brandon';
-  return this.username;
-
-
-}
-
-
 
 }
