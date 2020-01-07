@@ -12,11 +12,11 @@
   <ion-card-content >
   <div [ngClass]="showing ? 'show': 'hide'">
     <div class="login-box">
-    <ion-button (click)="auth.googleLogin()"> Login With Google<ion-icon name="logo-google"></ion-icon></ion-button>
-    <ion-button (click)="login()"> Login With Facebook<ion-icon name="logo-facebook"></ion-icon></ion-button>
+    <ion-button color="dark" (click)="auth.googleLogin()"> Login With Google<ion-icon name="logo-google"></ion-icon></ion-button>
+    <ion-button color="dark" (click)="auth.fbLogin()"> Login With Facebook<ion-icon name="logo-facebook"></ion-icon></ion-button>
     </div>
   </div>
-  <ion-button [ngClass]="showing ? 'hide':'show'"  (click)="showing = !showing" color="primary">Login</ion-button>
+  <ion-button color="dark" [ngClass]="showing ? 'hide':'show'"  (click)="showing = !showing" >Login</ion-button>
   </ion-card-content>
 </ion-card>
 </ion-content>
