@@ -1,0 +1,15 @@
+.star-rating{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+
+    .star-container{
+    
+    display: flex;
+    flex-direction: row;
+        
+        img{
+        width: 20px;
+        }
+    }
+}

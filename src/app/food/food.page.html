@@ -1,0 +1,32 @@
+<ion-header color="dark">
+  <ion-toolbar color="dark">
+    <ion-title>Food</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-map></app-map>
+  <ion-card *ngFor="let location of locations let i=index">
+    <ion-card-header>
+      <ion-card-title>{{locations[i].name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      <div class="star-rating">
+        <div class="star-container" *ngIf="locations[i].rating === '5'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="locations[i].rating === '4'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="locations[i].rating === '3'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="locations[i].rating === '2'"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="locations[i].rating === '1'"><img src="../../assets/star.png"></div>
+      </div>
+
+
+      Quick Review:
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

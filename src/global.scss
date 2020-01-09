@@ -28,3 +28,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "./theme/variables.scss";
+
+:root{
+--ion-color-balidragon: #f44336;
+--ion-color-baliocean: #009688;
+--ion-color-baligrimace: #6C648B;
+--ion-color-balidapper:#374785;
+--ion-color-balisunkiss: #e67235;
+--ion-color-balipoolside: #36a1d4;
+--ion-color-balijungle: #015249;
+}

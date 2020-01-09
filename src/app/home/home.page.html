@@ -7,54 +7,61 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
+<ion-content fullscreen>
 <app-user-profile></app-user-profile>
-<ion-card>
-  <ion-label>Transportation</ion-label>
-  <ion-button>Book A driver
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" class="balidragon">
+  <ion-button color="balisunkiss">Book A driver
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/car.png" alt="" srcset="">
   </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Restraunt Guide</ion-label>
-  <ion-button>Food
+  </ion-col>
+  <!-- <ion-label>Restraunt Guide</ion-label> -->
+  <ion-col class="baligrimace">
+  <ion-button (click)="f()" color="balidragon">Best Food
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/food.png"alt="" srcset="">
   </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Day Club Guide</ion-label>
-  <ion-button>Day clubs
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col class="balipoolside">
+  <ion-button color="balipoolside">Day Clubs
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/pool.png" alt="" srcset="">
   </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Bali Day Attractions</ion-label>
-  <ion-button>Attractions
+</ion-col>
+<ion-col class="balijungle" size="6">
+  <ion-button color="balijungle">Attractions
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/monkey.png" alt="" srcset="">
   </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Night Life</ion-label>
-  <ion-button>Bali Night Clubs
+</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col class="balidapper" size="7">
+  <ion-button color="balidapper">Night Clubs
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/map.png" alt="" srcset="">
   </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Message Boards</ion-label>
-  <ion-button>Forum
-    <img class="imgIcon" src="https://balione.s3.amazonaws.com/message.png" alt="" srcset="">
-  </ion-button>
-</ion-card>
-<ion-card>
-  <ion-label>Health Guide</ion-label>
-  <ion-button>Health
-    <img class="imgIcon" src="https://balione.s3.amazonaws.com/health.png" alt="" srcset="">
-  </ion-button>
-</ion-card>
-<ion-card>
-  <ion-button color="danger" (click)="auth.signOut()">
-    Logout
-  </ion-button>
-</ion-card>
+</ion-col>
 
-</ion-content>
+  <ion-col class="baliocean">
+    <ion-button color="baliocean">Forum
+      <img class="imgIcon" src="https://balione.s3.amazonaws.com/message.png" alt="" srcset="">
+    </ion-button>
+  </ion-col>
+  </ion-row>
+<ion-row>
+  <ion-col class="balisunkiss" size="4">
+    <ion-button color="balisunkiss">Health
+      <img class="imgIcon" src="https://balione.s3.amazonaws.com/health.png" alt="" srcset="">
+    </ion-button>
+  </ion-col>
+  <ion-col class="balidragon">
+    <ion-button color="balidragon" (click)="auth.signOut()">
+      Logout
+    </ion-button>
+  </ion-col>
+</ion-row>
+
+</ion-grid>
+</ion-content >

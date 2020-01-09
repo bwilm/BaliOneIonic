@@ -1,0 +1,21 @@
+<agm-map [zoom]="14" 
+[latitude]="lat" 
+[longitude]="long" 
+class="baliMap" 
+(mapClick)="onChoseLocation($event)">
+
+<agm-marker [latitude]="-8.682909" [longitude]="115.172491">
+
+</agm-marker>
+
+<agm-marker *ngFor="let location of locations let i=index" 
+[latitude]="locations[i].lat"
+[longitude]="locations[i].long"
+>
+
+<agm-info-window #infoWindow>
+{{locations[i].name}}
+</agm-info-window>
+</agm-marker>
+
+</agm-map>
