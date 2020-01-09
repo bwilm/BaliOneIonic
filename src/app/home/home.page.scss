@@ -5,9 +5,44 @@ ion-card{
 ion-label{
     color: white;
 }
-.select-icon{
-
+ion-col{
+    height: 100px;
 }
+
+ion-col{
+    margin: 2.5px;
+    border-radius: 5px;
+}
+
+.primary{
+    background-color: #3880ff;
+}
+
+
+
+
+.baligrimace{
+background-color: #6C648B;
+}
+.balidapper{
+background-color: #374785;
+}
+.balisunkiss{
+    background-color:#e67235; 
+} 
+.balipoolside {
+    background-color: #36a1d4
+}
+.balijungle{
+    background-color: #015249
+};
+.balidragon{
+    background-color: #f44336;
+}
+.baliocean{
+    background-color: #009688;
+}
+
 .imgIcon{
     max-width: 30px;
     width: 30px;
