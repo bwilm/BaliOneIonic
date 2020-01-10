@@ -6,7 +6,7 @@ ion-label{
     color: white;
 }
 ion-col{
-    height: 100px;
+    height: 180px;
 }
 
 ion-col{
@@ -23,24 +23,54 @@ ion-col{
 
 .baligrimace{
 background-color: #6C648B;
+background-image: url('../../assets/images/balinesefood.jpg');
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
 }
 .balidapper{
 background-color: #374785;
+opacity: 0.8;
+background-image: url('../../assets/images/balinightclubs.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 }
 .balisunkiss{
     background-color:#e67235; 
+opacity: 0.8;
+background-image: url('../../assets/images/health.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 } 
 .balipoolside {
-    background-color: #36a1d4
+background-color: #36a1d4;
+opacity: 0.8;
+background-image: url('../../assets/images/dayclubs.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 }
 .balijungle{
-    background-color: #015249
+    background-color: #015249;
+
+opacity: 0.8;
+background-image: url('../../assets/images/monkeysanctuary.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 };
 .balidragon{
-    background-color: #f44336;
+background-color: #f44336;
+opacity: 0.8;
+background-image: url('../../assets/images/balinesedriver.jpg');
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
 }
 .baliocean{
-    background-color: #009688;
+background-color: #009688;
+opacity: 0.8;
+background-image: url('../../assets/images/friends.jpg');
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .imgIcon{
