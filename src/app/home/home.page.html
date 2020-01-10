@@ -1,16 +1,21 @@
 <ion-header color="dark">
   <ion-toolbar color="dark">
     <div class="toolbar-row">
+      <app-user-profile></app-user-profile>
       <ion-title>Dashboard</ion-title>
     </div>
-
+    <ion-col color="danger">
+      <ion-button color="danger" (click)="auth.signOut()">
+        Logout
+      </ion-button>
+    </ion-col>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
-<app-user-profile></app-user-profile>
+<ion-content fullscreen >
 
-<ion-grid>
+
+<ion-grid color="dark">
   <ion-row>
     <ion-col size="6" class="balidragon">
   <ion-button color="balisunkiss">Book A driver
@@ -19,7 +24,7 @@
   </ion-col>
   <!-- <ion-label>Restraunt Guide</ion-label> -->
   <ion-col class="baligrimace">
-  <ion-button (click)="f()" color="balidragon">Best Food
+  <ion-button (click)="f()" color="baligrimace">Best Food
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/food.png"alt="" srcset="">
   </ion-button>
 </ion-col>
@@ -51,14 +56,9 @@
   </ion-col>
   </ion-row>
 <ion-row>
-  <ion-col class="balisunkiss" size="4">
+  <ion-col class="balisunkiss" size="10">
     <ion-button color="balisunkiss">Health
       <img class="imgIcon" src="https://balione.s3.amazonaws.com/health.png" alt="" srcset="">
-    </ion-button>
-  </ion-col>
-  <ion-col class="balidragon">
-    <ion-button color="balidragon" (click)="auth.signOut()">
-      Logout
     </ion-button>
   </ion-col>
 </ion-row>

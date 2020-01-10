@@ -24,8 +24,8 @@ import { LocationsService } from '../locations.service';
 constructor(private ls: LocationsService) {
 
   this.locations = this.ls.getLocations();
-};
-  
+}
+
 
 
   ngOnInit(): void {

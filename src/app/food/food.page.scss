@@ -1,9 +1,9 @@
-.star-rating{
+.star-rating, .price-rating{
     display: flex;
     flex-direction: row;
     padding-bottom: 15px;
 
-    .star-container{
+    .star-container, .price-container{
     
     display: flex;
     flex-direction: row;
@@ -12,4 +12,9 @@
         width: 20px;
         }
     }
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
