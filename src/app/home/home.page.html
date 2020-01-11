@@ -1,16 +1,17 @@
+
 <ion-header color="dark">
   <ion-toolbar color="dark">
     <div class="toolbar-row">
       <app-user-profile></app-user-profile>
       <ion-title>Dashboard</ion-title>
-    </div>
-    <ion-col color="danger">
       <ion-button color="danger" (click)="auth.signOut()">
         Logout
       </ion-button>
-    </ion-col>
+    </div>
   </ion-toolbar>
 </ion-header>
+
+
 
 <ion-content fullscreen >
 
@@ -24,14 +25,14 @@
   </ion-col>
   <!-- <ion-label>Restraunt Guide</ion-label> -->
   <ion-col class="baligrimace">
-  <ion-button (click)="f()" color="baligrimace">Best Food
+  <ion-button [routerLink]="['/food']" routerLinkActive="router-link-active"  color="baligrimace">Best Food
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/food.png"alt="" srcset="">
   </ion-button>
 </ion-col>
 </ion-row>
 <ion-row>
   <ion-col class="balipoolside">
-  <ion-button color="balipoolside">Day Clubs
+  <ion-button [routerLink]="['/dayclubs']" routerLinkActive="router-link-active"  color="balipoolside">Day Clubs
     <img class="imgIcon" src="https://balione.s3.amazonaws.com/pool.png" alt="" srcset="">
   </ion-button>
 </ion-col>

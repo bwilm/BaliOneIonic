@@ -21,11 +21,9 @@
     <ion-col class="ion-justify-content-center">
   <ng-template #authenticated class="avatar-chip">
     <div *ngIf="auth.user | async as user">
-      <ion-chip>
       <ion-avatar>
         <img src="{{user.photoURL}}">
       </ion-avatar>
-    </ion-chip>
     </div>
     </ng-template>
   </ion-col>
