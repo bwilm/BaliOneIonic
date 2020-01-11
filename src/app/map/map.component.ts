@@ -19,21 +19,19 @@ import { LocationsService } from '../locations.service';
   long = 115.17;
   markers;
   locations;
+  dcLocations;
+  iconUrl = './../../assets/youarehere.png';
 
   // tslint:disable-next-line: semicolon
 constructor(private ls: LocationsService) {
 
   this.locations = this.ls.getLocations();
+  this.dcLocations = this.ls.getDayClubs();
 }
 
 
 
-  ngOnInit(): void {
-   console.log(this.locations);
-  }
-
-
-
+  ngOnInit(): void {}
 
 
 

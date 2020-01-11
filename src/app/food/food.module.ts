@@ -10,6 +10,7 @@ import { FoodPage } from './food.page';
 import { MapComponent } from '../map/map.component';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from 'src/environments/environment';
+import { DayclubsPageModule } from '../dayclubs/dayclubs.module';
 
 
 @NgModule({

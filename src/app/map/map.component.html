@@ -1,10 +1,10 @@
-<agm-map [zoom]="14" 
+<agm-map [zoom]="10" 
 [latitude]="lat" 
 [longitude]="long" 
 class="baliMap" 
 (mapClick)="onChoseLocation($event)">
 
-<agm-marker [latitude]="-8.682909" [longitude]="115.172491">
+<agm-marker [latitude]="lat" [longitude]="long" [iconUrl]="iconUrl">
 
 </agm-marker>
 

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>dayclubs</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <app-map></app-map>
+  <ion-card *ngFor="let item of dayclubs let i=index">
+    <img [src]=dayclubs[i].img>
+    <ion-card-header>
+      <ion-card-title>{{dayclubs[i].name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content color="dark">
+
+      <div class="star-rating">
+        <div class="star-container" *ngIf="dayclubs[i].rating === '5'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="dayclubs[i].rating === '4'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="dayclubs[i].rating === '3'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="dayclubs[i].rating === '2'"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+        <div class="star-container" *ngIf="dayclubs[i].rating === '1'"><img src="../../assets/star.png"></div>
+      </div>
+
+      <div class="price-rating">
+        <div class="price-container" *ngIf="dayclubs[i].price === '5'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+        <div class="price-container" *ngIf="dayclubs[i].price === '4'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+        <div class="price-container" *ngIf="dayclubs[i].price === '3'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+        <div class="price-container" *ngIf="dayclubs[i].price === '2'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+        <div class="price-container" *ngIf="dayclubs[i].price === '1'"><img src="../../assets/dollar.png"></div>
+      </div>
+
+
+      <p>
+        {{dayclubs[i].review}}
+      </p>
+
+      <ion-chip>
+        <a href="{{dayclubs[i].address}}" target="_blank">
+        <ion-label>Directions <ion-icon name="compass"></ion-icon></ion-label>
+      </a>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

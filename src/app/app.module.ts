@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 //  Angular Firebase Imports
 
@@ -16,6 +17,10 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from './../environments/environment';
 import { AuthGuard } from './core/auth.guard';
+import { FoodPageModule } from './food/food.module';
+import { DayclubsPageModule } from './dayclubs/dayclubs.module';
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
 
 
 const firebaseConfig = {
@@ -33,6 +38,7 @@ const firebaseConfig = {
   entryComponents: [],
   imports: [
   BrowserModule,
+  HttpClientModule,
   IonicModule.forRoot(),
   AppRoutingModule,
   AngularFireModule.initializeApp(firebaseConfig),
@@ -41,6 +47,9 @@ const firebaseConfig = {
   AngularFireStorageModule,
   AngularFirestoreModule,
   AngularFireDatabaseModule,
+  // AgmCoreModule.forRoot({
+  //   apiKey: environment.agmAPIkey
+  // })
   ],
   providers: [
     StatusBar,
