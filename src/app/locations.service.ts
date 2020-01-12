@@ -25,6 +25,7 @@ export class LocationsService {
       lat: '-8.680611',
       long: '115.152678',
       img: 'https://www.streetboibali.com/wp-content/uploads/2019/09/slider1.jpg',
+      // tslint:disable-next-line: max-line-length
       review: 'Born of childhood memories. Fluffy steamed bao with classic fillings feed the beast and the gentle vegetarian. Asian flavours give Seminyak enough spice to write home about. Best washed down with cold beer and artisanal cocktails.',
       address: 'https://goo.gl/maps/zqB6f2ryAycpx4fU6'
     },
@@ -35,11 +36,12 @@ export class LocationsService {
       lat: '-8.509876',
       long: '115.263540',
       img: 'https://media-cdn.tripadvisor.com/media/photo-s/05/1b/28/fd/restaurant-locavore.jpg',
+      // tslint:disable-next-line: max-line-length
       review: 'Locavore guests can anticipate an unforgettable culinary adventure. Led by classically trained chefs Ray and Eelke, the passionate and dedicated kitchen team create unique, contemporary European fare from the finest of locally sourced seasonal ingredients. Artfully presented, meticulously prepared and utterly delicious, the cuisine of Locavore promises an exhilarating fine dining experience.',
       address: 'https://goo.gl/maps/hfxCGsyBUDJ54TRP7'
     }
   ];
-  //dayClub list data object (JSON)
+  // dayClub list data object (JSON)
   dcList = [{
       name: 'OMNIA Dayclub Bali',
       rating: '5',
@@ -58,6 +60,7 @@ export class LocationsService {
       lat: '-8.679490',
       long: '115.149894',
       img: 'https://bb.trvcdn.net/uploads/galleries/IMG_1187-lr_1521529203.jpg',
+      // tslint:disable-next-line: max-line-length
       review: 'Beyond the lounge-bar space, PHBC houses three restaurants where each of them presents its own distinct personalities. Potato Head Bistro serves comfort food inspired by international home cooked recipes. On the other hand, Lilin offers a tapas selection of South East Asian cuisine and choices of exotic live seafood as its main highlight. The journey is not complete without savoring Chef Takes dishes mad with passion and love, at the elegant, yet homey, chandelier-lit restaurant that is Tapping Shoes.',
       address: 'https://goo.gl/maps/xo1ceioa4yKUXpcW6'
     },
@@ -67,7 +70,8 @@ export class LocationsService {
       price: '5',
       lat: '-8.813964',
       long: '115.091615',
-      img: 'https://nowbali.co.id/wp-content/uploads/2017/12/NIT-Ulu-Cliffhouse-768x512.jpg',
+      img: 'https://www.theyakmag.com/wp-content/uploads/2017/11/ulu-criftop13.jpg',
+      // tslint:disable-next-line: max-line-length
       review: 'A clifftop oasis that shakes up the Bali beach club scene with world-class F&B offerings led by Chef Diego Munoz, a cliff edge rock bar and creative residence for music artists, Ulu Cliffhouse is a 50,000ft² clifftop playground nestled in Uluwatu. With direct access to the beach, Ulu’s clifftop playground showcases a 25-metre infinity pool, a music recording studio, an art space and food and drinks – from its open-air restaurant to cliff side rock bar hanging provocatively over the waves',
       address: 'https://goo.gl/maps/7LSuLxFipJPzNV4B9'
     }

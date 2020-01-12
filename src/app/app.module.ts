@@ -17,10 +17,6 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from './../environments/environment';
 import { AuthGuard } from './core/auth.guard';
-import { FoodPageModule } from './food/food.module';
-import { DayclubsPageModule } from './dayclubs/dayclubs.module';
-import { AgmCoreModule } from '@agm/core';
-import { MapComponent } from './map/map.component';
 
 
 const firebaseConfig = {
@@ -46,10 +42,7 @@ const firebaseConfig = {
   AngularFireAuthModule,
   AngularFireStorageModule,
   AngularFirestoreModule,
-  AngularFireDatabaseModule,
-  // AgmCoreModule.forRoot({
-  //   apiKey: environment.agmAPIkey
-  // })
+  AngularFireDatabaseModule
   ],
   providers: [
     StatusBar,

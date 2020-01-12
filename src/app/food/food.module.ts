@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { FoodPageRoutingModule } from './food-routing.module';
-
 import { FoodPage } from './food.page';
-import { MapComponent } from '../map/map.component';
-import { AgmCoreModule } from '@agm/core';
-import { environment } from 'src/environments/environment';
-import { DayclubsPageModule } from '../dayclubs/dayclubs.module';
+import { MapModule } from '../map/map.module';
+import { RestaurantComponent } from '../restaurant/restaurant.component';
 
 
 @NgModule({
@@ -19,10 +14,8 @@ import { DayclubsPageModule } from '../dayclubs/dayclubs.module';
     FormsModule,
     IonicModule,
     FoodPageRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: environment.agmAPIkey
-    })
+    MapModule
   ],
-  declarations: [FoodPage, MapComponent]
+  declarations: [FoodPage, RestaurantComponent]
 })
 export class FoodPageModule {}

@@ -4,9 +4,7 @@
 class="baliMap" 
 (mapClick)="onChoseLocation($event)">
 
-<agm-marker [latitude]="lat" [longitude]="long" [iconUrl]="iconUrl">
-
-</agm-marker>
+<agm-marker [latitude]="lat" [longitude]="long" [iconUrl]="iconUrl"></agm-marker>
 
 <agm-marker *ngFor="let location of locations let i=index" 
 [latitude]="locations[i].lat"
