@@ -1,0 +1,38 @@
+<ion-card *ngFor="let location of locations let i=index">
+  <img [src]=locations[i].img>
+  <ion-card-header>
+    <ion-card-title>{{locations[i].name}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content color="dark">
+
+    <div class="star-rating">
+      <div class="star-container" *ngIf="locations[i].rating === '5'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+      <div class="star-container" *ngIf="locations[i].rating === '4'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+      <div class="star-container" *ngIf="locations[i].rating === '3'"><img src="../../assets/star.png"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+      <div class="star-container" *ngIf="locations[i].rating === '2'"><img src="../../assets/star.png"><img src="../../assets/star.png"></div>
+      <div class="star-container" *ngIf="locations[i].rating === '1'"><img src="../../assets/star.png"></div>
+    </div>
+
+    <div class="price-rating">
+      <div class="price-container" *ngIf="locations[i].price === '5'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+      <div class="price-container" *ngIf="locations[i].price === '4'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+      <div class="price-container" *ngIf="locations[i].price === '3'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+      <div class="price-container" *ngIf="locations[i].price === '2'"><img src="../../assets/dollar.png"><img src="../../assets/dollar.png"></div>
+      <div class="price-container" *ngIf="locations[i].price === '1'"><img src="../../assets/dollar.png"></div>
+    </div>
+
+
+    <p>
+      {{locations[i].review}}
+    </p>
+
+    <ion-chip>
+      <a href="{{locations[i].address}}" target="_blank">
+      <ion-label>Directions <ion-icon name="compass"></ion-icon></ion-label>
+    </a>
+    </ion-chip>
+  </ion-card-content>
+</ion-card>
+
+

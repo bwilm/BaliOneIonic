@@ -13,7 +13,8 @@ export class DayclubsPage implements OnInit {
   constructor(private ls: LocationsService) { }
 
   ngOnInit() {
-    this.ls.getDayClubs = this.dayClubs;
+    this.dayClubs = this.ls.getDayClubs();
+    console.log(this.dayClubs)
   }
 
 }
